@@ -5,6 +5,19 @@ https://proyecto-sprint7-voph.onrender.com
 
 Este proyecto presenta una aplicación web interactiva desarrollada con Streamlit y Plotly para realizar un análisis exploratorio de datos sobre los precios de vehículos en Estados Unidos. La herramienta permite a los usuarios visualizar y comprender mejor los factores que influyen en el precio de los vehículos, como el año del modelo y el kilometraje. 
 
+## El problema:
+Los precios de vehículos usados varían mucho según año, kilometraje, modelo y otras características. Para vendedores y analistas es crítico identificar tendencias, modelos con mayor/menor valor y cómo el kilometraje impacta el precio para optimizar fijación de precio, inventario y decisiones comerciales.
+
+## Datos
+Datos
+
+Archivo principal: vehicles_us.csv (incluye registros de vehículos usados).
+
+Columnas relevantes (típicas): price, year, odometer (kilometraje), make, model, condition, state, transmission, listing_date.
+
+Limpieza aplicada: manejo de nulos, filtro de outliers en price y odometer, normalización de nombres de modelo/marca y conversión de fechas.
+
+
 ## Características
 
 *   **Visualización de Gráficos Interactivos:**
@@ -15,6 +28,16 @@ Este proyecto presenta una aplicación web interactiva desarrollada con Streamli
     *   Identificación y visualización de los 10 modelos de vehículos más caros.
     *   Identificación y visualización de los 10 modelos de vehículos más económicos.
 *   **Filtros de Datos:** Barra lateral para seleccionar y visualizar los diferentes gráficos.
+
+## Resultados KPIs
+Precio medio y mediana por año de modelo (permite ver la depreciación típica).
+Relación precio vs. kilometraje (scatter interactivo + tendencia): permite estimar elasticidad por kilometraje.
+Top 10 modelos más caros / más económicos (por precio medio).
+Distribución de precios (percentiles: 10/25/50/75/90) para valorar rango de mercado.
+Número de registros analizados y porcentaje filtrado tras limpieza (calidad de datos).
+Score de modelo sencillo (R² o MAE) si se ejecuta la parte de modelado, para medir cuán explicable es el precio con las features disponibles.
+
+Estos KPIs se muestran en dashboards y se actualizan con los filtros que aplique el usuario.
 
 ## Utilidad y Potencial para los Negocios
 
