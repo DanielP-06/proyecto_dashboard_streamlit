@@ -1,8 +1,6 @@
 El enlace para visualizar el proyecto en render es el siguiente:
 https://proyecto-sprint7-voph.onrender.com
 
-# Análisis Interactivo de Precios de Vehículos en EE. UU.
-
 Este proyecto presenta una aplicación web interactiva desarrollada con Streamlit y Plotly para realizar un análisis exploratorio de datos sobre los precios de vehículos en Estados Unidos. La herramienta permite a los usuarios visualizar y comprender mejor los factores que influyen en el precio de los vehículos, como el año del modelo y el kilometraje. 
 
 ## El problema:
